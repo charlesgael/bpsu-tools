@@ -1,0 +1,14 @@
+import type { UserModule } from '~/types'
+import Vueform, { defineConfig } from '@vueform/vueform'
+import theme from '@vueform/vueform/dist/vueform'
+import en from '@vueform/vueform/locales/en'
+
+const config = defineConfig({
+  theme,
+  locales: { en },
+  locale: 'en',
+})
+
+export const install: UserModule = ({ app }) => {
+  app.use(Vueform, config)
+}

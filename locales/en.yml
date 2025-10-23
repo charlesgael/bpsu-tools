@@ -1,0 +1,378 @@
+drop:
+  regular:
+    gathering:
+      gemology: Gemology (regular)
+      botany: Botany (regular)
+      mineralogy: Mineralogy (regular)
+    homestead:
+      buy: Buy from homestead
+profession:
+  botany: Botany
+  mineralogy: Mineralogy
+  gemology: Gemology
+  culinary: Culinary
+  alchemy: Alchemy
+  smelting: Smelting
+  gemcrafting: Gemcrafting
+  artisanry: Artisanry
+  weaving: Weaving
+item:
+  burning_powder: Burning Powder
+  metal_dust: Metal Dust
+  metal_ingot: Metal Ingot
+  fast_burning_powder: Fast-burning Powder
+  baru_ore: Baru Ore
+  baru_rich_ore: Baru Rich Ore
+  azte_ore: Azte Ore
+  azte_rich_ore: Azte Rich Ore
+  azte_pure_ore: Azte Pure Ore
+  luna_ore: Luna Ore
+  luna_rich_ore: Luna Rich Ore
+  luna_pure_ore: Luna Pure Ore
+  stokes_ore: Stokes Ore
+  stokes_rich_ore: Stokes Rich Ore
+  pig_iron_ingot: Pig Iron Ingot
+  pig_iron_rivet: Pig Iron Rivet
+  pig_iron_plate: Pig Iron Plate
+  bronze_ingot: Bronze Ingot
+  bronze_plate: Bronze Plate
+  bronze_ring: Bronze Ring
+  brass_ingot: Brass Ingot
+  brass_plate: Brass Plate
+  brass_ring: Brass Ring
+  cobalt_iron_ingot: Cobalt-Iron Ingot
+  cobalt_iron_plate: Cobalt-iron Plate
+  cobalt_iron_ring: Cobalt-iron Ring
+  lustrous_copper_ingot: Lustrous Copper Ingot
+  lustrous_copper_plate: Lustrous Copper Plate
+  lustrous_copper_ring: Lustrous Copper Ring
+  mithril_ingot: Mithril Ingot
+  mithril_plate: Mithril Plate
+  mithril_ring: Mithril Ring
+  gleaming_gold_ingot: Gleaming Gold Ingot
+  gleaming_gold_plate: Gleaming Gold Plate
+  gleaming_legendary_ring: Gleaming Legendary Ring
+  mithril_alloy_ingot: Mithril Alloy Ingot
+  mithril_alloy_plate: Mithril Alloy Plate
+  mithril_alloy_ring: Mithril Alloy Ring
+  gem_wax: Gem Wax
+  strong_molding_agent: Strong Molding Agent
+  red_powder: Red Powder
+  blue_powder: Blue Powder
+  green_powder: Green Powder
+  yellow_powder: Yellow Powder
+  starlight_ruby_lv_1: Starlight Ruby Lv.1
+  starlight_ruby_lv_2: Starlight Ruby Lv.2
+  starlight_ruby_lv_3: Starlight Ruby Lv.3
+  starlight_sapphire_lv_1: Starlight Sapphire Lv.1
+  starlight_sapphire_lv_2: Starlight Sapphire Lv.2
+  starlight_sapphire_lv_3: Starlight Sapphire Lv.3
+  starlight_emerald_lv_1: Starlight Emerald Lv.1
+  starlight_emerald_lv_2: Starlight Emerald Lv.2
+  starlight_emerald_lv_3: Starlight Emerald Lv.3
+  starlight_diamond_lv_1: Starlight Diamond Lv.1
+  starlight_diamond_lv_2: Starlight Diamond Lv.2
+  starlight_diamond_lv_3: Starlight Diamond Lv.3
+  cut_stone: Cut Stone
+  stone_slab: Stone Slab
+  rough_paper: Rough Paper
+  sandstone_polishers: Sandstone Polishers
+  quartz_sand: Quartz Sand
+  sapphire: Sapphire
+  ruby: Ruby
+  topaz: Topaz
+  emerald: Emerald
+  red_agate: Red Agate
+  titanite: Titanite
+  azure_stone: Azure Stone
+  peridot: Peridot
+  sunstone: Sunstone
+  spodumene: Spodumene
+  durable_paper: Durable Paper
+  shale_cut_stone: Shale Cut Stone
+  shale_plate: Shale Plate
+  shale_polishing_stone: Shale Polishing Stone
+  granite_cut_stone: Granite Cut Stone
+  granite_plate: Granite Plate
+  granite_polishing_stone: Granite Polishing Stone
+  feldspar: Feldspar
+  mica: Mica
+  kilaueite: Kilaueite
+  starburst_spar: Starburst Spar
+  cyan_bellstone: Cyan Bellstone
+  orange_spinel: Orange Spinel
+  aurora_stone: Aurora Stone
+  black_coral: Black Coral
+  element_extractor: Element Extractor
+  purifier: Purifier
+  abandoned_purifier: '[Abandoned] Purifier'
+  placeholder_material: Placeholder Material
+  ice_particle_lv_1: Ice Particle Lv.1
+  ice_particle_lv_2: Ice Particle Lv.2
+  ice_particle_lv_3: Ice Particle Lv.3
+  fire_particle_lv_1: Fire Particle Lv.1
+  fire_particle_lv_2: Fire Particle Lv.2
+  fire_particle_lv_3: Fire Particle Lv.3
+  forest_particle_lv_1: Forest Particle Lv.1
+  forest_particle_lv_2: Forest Particle Lv.2
+  forest_particle_lv_3: Forest Particle Lv.3
+  earth_particle_lv_1: Earth Particle Lv.1
+  earth_particle_lv_2: Earth Particle Lv.2
+  earth_particle_lv_3: Earth Particle Lv.3
+  wind_particle_lv_1: Wind Particle Lv.1
+  wind_particle_lv_2: Wind Particle Lv.2
+  wind_particle_lv_3: Wind Particle Lv.3
+  lightning_particle_lv_1: Lightning Particle Lv.1
+  lightning_particle_lv_2: Lightning Particle Lv.2
+  lightning_particle_lv_3: Lightning Particle Lv.3
+  light_particle_lv_1: Light Particle Lv.1
+  light_particle_lv_2: Light Particle Lv.2
+  light_particle_lv_3: Light Particle Lv.3
+  dark_particle_lv_1: Dark Particle Lv.1
+  dark_particle_lv_2: Dark Particle Lv.2
+  dark_particle_lv_3: Dark Particle Lv.3
+  fresh_meat: Fresh Meat
+  premium_raw_meat: Premium Raw Meat
+  exquisite_raw_meat: Exquisite Raw Meat
+  fish_meat: Fish Meat
+  premium_fish_meat: Premium Fish Meat
+  named_fish_meat_placeholder: Named Fish Meat Placeholder
+  potion_catalyst_rec: Potion Catalyst - REC
+  potion_catalyst_enh: Potion Catalyst - ENH
+  potion_catalyst_res: Potion Catalyst - RES
+  arcane_conversion_potion: Arcane Conversion Potion
+  knowledge_convert_potion: Knowledge Convert Potion
+  color_purification_catalyst: Color Purification Catalyst
+  neutralizing_reaction_catalyst: Neutralizing Reaction Catalyst
+  placeholder_item: Placeholder Item
+  boiled_water: Boiled Water
+  plant_oil: Plant Oil
+  mortar: Mortar
+  natron: Natron
+  rubber: Rubber
+  ink: Ink
+  enigmite_powder: Enigmite Powder
+  varnish: Varnish
+  chitin_fiber: Chitin fiber
+  red_spray: Red Spray
+  orange_spray: Orange Spray
+  yellow_spray: Yellow Spray
+  green_spray: Green Spray
+  cyan_spray: Cyan Spray
+  blue_spray: Blue Spray
+  purple_spray: Purple Spray
+  fired_brick: Fired Brick
+  beeswax: Beeswax
+  glass_plate: Glass Plate
+  adhesive: Adhesive
+  low_purity_fish_oil: Low-Purity Fish Oil
+  evergreen_agent_t_1: Evergreen Agent T-1
+  bioluminescent_microalgae: Bioluminescent Microalgae
+  evergreen_agent_t_2: Evergreen Agent T-2
+  advanced_brick: Advanced Brick
+  oil_wax: Oil Wax
+  advanced_plate: Advanced Plate
+  black_adhesive: Black Adhesive
+  refined_fish_oil: Refined Fish Oil
+  evergreen_agent_t_3: Evergreen Agent T-3
+  fluorescent_lamp_t_1: Fluorescent Lamp T-1
+  evergreen_agent_t_4: Evergreen Agent T-4
+  residue_free_adhesive: Residue-Free Adhesive
+  essence_fish_oil: Essence Fish Oil
+  evergreen_agent_t_5: Evergreen Agent T-5
+  dyeing_agent_red_abandoned: Dyeing Agent - Red (Abandoned)
+  dyeing_agent_yellow_abandoned: Dyeing Agent - Yellow (Abandoned)
+  dyeing_agent_blue_abandoned: Dyeing Agent - Blue (Abandoned)
+  dyeing_agent_green_abandoned: Dyeing Agent - Green (Abandoned)
+  charcoal: Charcoal
+  pine_lumber: Pine Lumber
+  beech_lumber: Beech Lumber
+  oak_lumber: Oak Lumber
+  birch_lumber: Birch Lumber
+  walnut_lumber: Walnut Lumber
+  white_oak_lumber: White Oak Lumber
+  red_dye: Red Dye
+  orange_dye: Orange Dye
+  yellow_dye: Yellow Dye
+  green_dye: Green Dye
+  cyan_dye: Cyan Dye
+  blue_dye: Blue Dye
+  purple_dye: Purple Dye
+  refined_yarn: Refined Yarn
+  refined_cotton: Refined Cotton
+  refined_canvas: Refined Canvas
+  refined_flannel: Refined Flannel
+  refined_soft_leather: Refined Soft Leather
+  refined_hard_leather: Refined Hard Leather
+  hand_spun_yarn: Hand-Spun Yarn
+  hand_spun_cotton: Hand-Spun Cotton
+  hand_spun_canvas: Hand-Spun Canvas
+  hand_spun_flannel: Hand-Spun Flannel
+  hand_spun_blended_fabric: Hand-Spun Blended Fabric
+  smooth_soft_leather: Smooth Soft Leather
+  smooth_hard_leather: Smooth Hard Leather
+  worsted_yarn: Worsted Yarn
+  worsted_cotton_fabric: Worsted Cotton Fabric
+  worsted_canvas: Worsted Canvas
+  worsted_flannel: Worsted Flannel
+  tough_soft_leather: Tough Soft Leather
+  tough_hard_leather: Tough Hard Leather
+  luxury_mulberry_silk: Luxury Mulberry Silk
+  luxury_cotton_fabric: Luxury Cotton Fabric
+  luxury_canvas: Luxury Canvas
+  luxury_flannel: Luxury Flannel
+  premier_soft_leather: Premier Soft Leather
+  premier_hard_leather: Premier Hard Leather
+  honey: Honey
+  salt: Salt
+  flour: Flour
+  nine_flavor_spice: Nine-Flavor Spice
+  butter: Butter
+  pure_water: Pure Water
+  fresh_milk: Fresh Milk
+  overcooked_bone_meal: Overcooked Bone Meal
+  botanic_growth_powder: Botanic Growth Powder
+  refined_bone_meal: Refined Bone Meal
+  refined_botanic_powder: Refined Botanic Powder
+  essence_bone_meal: Essence Bone Meal
+  enriching_botanic_growth_powder: Enriching Botanic Growth Powder
+  garden_fertilizer_t1: Garden Fertilizer T1
+  garden_fertilizer_t2: Garden Fertilizer T2
+  garden_fertilizer_t3: Garden Fertilizer T3
+  garden_fertilizer_t4: Garden Fertilizer T4
+  garden_fertilizer_t5: Garden Fertilizer T5
+  sweet_berry: Sweet Berry
+  snowflake_parsley: Snowflake Parsley
+  pink_musk: Pink Musk
+  whispering_orchid: Whispering Orchid
+  asteria_cotton: Asteria Cotton
+  granny_pine: Granny Pine
+  meadow_mushroom: Meadow Mushroom
+  raw_meat: Raw Meat
+  raw_large_meat: Raw Large Meat
+  raw_shiny_meat: Raw Shiny Meat
+  scallop: Scallop
+  helmflower: Helmflower
+  firefly: Firefly
+  eagle_feather: Eagle Feather
+  shrimpcap_claw: Shrimpcap Claw
+  caprahorn_s_horn: Caprahorn's Horn
+  andra_enigmite: Andra Enigmite
+  bzzar_wing: Bzzar Wing
+  boarrier_tusk: Boarrier Tusk
+  potion_base: Potion Base
+  world_collectible: World Collectible
+  glowshroom: Glowshroom
+  umu_fruit: Umu Fruit
+  azure_fruit: Azure Fruit
+  raw_fish_meat: Raw Fish Meat
+  large_fish_meat: Large Fish Meat
+  shiny_fish_meat: Shiny Fish Meat
+  tender_plant_stems: Tender Plant Stems
+  knotted_plant_stems: Knotted Plant Stems
+  robust_plant_stems: Robust Plant Stems
+  buds: Buds
+  stress_resistant_buds: Stress-Resistant Buds
+  flax: Flax
+  cotton: Cotton
+  silkworm_cocoons: Silkworm Cocoons
+  hay: Hay
+  natural_pigment_red: Natural Pigment - Red
+  natural_pigment_legendary: Natural Pigment - Legendary
+  natural_pigment_yellow: Natural Pigment - Yellow
+  natural_pigment_green: Natural Pigment - Green
+  natural_pigment_cyan: Natural Pigment - Cyan
+  natural_pigment_blue: Natural Pigment - Blue
+  natural_pigment_epic: Natural Pigment - Epic
+  derived_pigment_cyan: Derived Pigment - Cyan
+  derived_pigment_legendary: Derived Pigment - Legendary
+  derived_pigment_epic: Derived Pigment - Epic
+  wheat: Wheat
+  resin: Resin
+  tree_resin: Tree Resin
+  twig: Twig
+  pliable_twig: Pliable Twig
+  tartberry_juice: Tartberry Juice
+  base_soil: Base Soil
+  emerald_apple: Emerald Apple
+  tokiwa_grass: Tokiwa Grass
+  engram_dust_crystals: Engram Dust Crystals
+  seedlings: Seedlings
+  derived_pigment_red: Derived Pigment - Red
+  derived_pigment_blue: Derived Pigment - Blue
+  derived_pigment_green: Derived Pigment - Green
+  derived_pigment_yellow: Derived Pigment - Yellow
+  coarse_animal_fiber: Coarse Animal Fiber
+  soft_beast_fur: Soft Beast Fur
+  luxury_animal_fiber: Luxury Animal Fiber
+  coarse_grained_animal_hides: Coarse-grained Animal Hides
+  durable_animal_hides: Durable Animal Hides
+  luxury_animal_hides: Luxury Animal Hides
+  horn: Horn
+  coarse_horn: Coarse Horn
+  hard_horn: Hard Horn
+  beehive: Beehive
+  pine_timber: Pine Timber
+  beech_timber: Beech Timber
+  oak_timber: Oak Timber
+  birch_timber: Birch Timber
+  walnut_timber: Walnut Timber
+  white_oak_timber: White Oak Timber
+  rock_salt: Rock Salt
+  alum: Alum
+  raw_ore_of_enigmite: Raw Ore of Enigmite
+  raw_ore_of_quartz: Raw Ore of Quartz
+  raw_ore_of_sapphire: Raw Ore of Sapphire
+  raw_ore_of_ruby: Raw Ore of Ruby
+  raw_ore_of_topaz: Raw Ore of Topaz
+  raw_ore_of_emerald: Raw Ore of Emerald
+  raw_ore_of_red_agate: Raw Ore of Red Agate
+  raw_ore_of_sunstone: Raw Ore of Sunstone
+  raw_ore_of_titanite: Raw Ore of Titanite
+  raw_ore_of_peridot: Raw Ore of Peridot
+  raw_ore_of_celestine: Raw Ore of Celestine
+  raw_ore_of_spodumene: Raw Ore of Spodumene
+  raw_ore_of_black_tourmaline: Raw Ore of Black Tourmaline
+  raw_ore_of_kilaueite: Raw Ore of Kilaueite
+  raw_ore_of_orange_spinel: Raw Ore of Orange Spinel
+  raw_ore_of_cyan_bellstone: Raw Ore of Cyan Bellstone
+  raw_ore_of_starburst_spar: Raw Ore of Starburst Spar
+  raw_ore_of_aurora_stone: Raw Ore of Aurora Stone
+  raw_ore_of_black_coral: Raw Ore of Black Coral
+  raw_ore_of_limestone: Raw Ore of Limestone
+  raw_ore_of_shale: Raw Ore of Shale
+  raw_ore_of_granite: Raw Ore of Granite
+  raw_ore_of_feldspar: Raw Ore of Feldspar
+  raw_ore_of_mica: Raw Ore of Mica
+  clay: Clay
+  fine_sand: Fine Sand
+  limpid_azure_water: Limpid Azure Water
+  fine_metal_sand: Fine Metal Sand
+  coal: Coal
+  iron_ore: Iron Ore
+  cobalt_iron_ore: Cobalt-Iron Ore
+  copper_ore: Copper Ore
+  lustrous_copper_ore: Lustrous Copper Ore
+  tin_ore: Tin Ore
+  zinc_ore: Zinc Ore
+  mithril_ore: Mithril Ore
+  shimmergold_ore: Shimmergold Ore
+  asterscad: Asterscad
+  continental_puffer: Continental Puffer
+  rockpea: Rockpea
+  azure_damsel: Azure Damsel
+  astermackere: Astermackere
+  regnus_bighead: Regnus Bighead
+  stellar_squirrelfish: Stellar Squirrelfish
+  lantern_puffer: Lantern Puffer
+  flaming_grouper: Flaming Grouper
+  snowy_bighead: Snowy Bighead
+  hanikon_bighead: Hanikon Bighead
+  thunder_flying_eel: Thunder Flying Eel
+  parrotfish: Parrotfish
+  food_fish: Food Fish
+  whale: Whale
+  starfish: Starfish
+  jellyfish: Jellyfish
+  coral: Coral
+  mixing_agent: Mixing Agent

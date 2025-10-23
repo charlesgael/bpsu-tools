@@ -1,0 +1,91 @@
+export default [
+  {
+    id: 'enigmite_powder_1',
+    ingredients: [
+      { itemId: 'raw_ore_of_enigmite', qty: 4 },
+      { itemId: 'twig', qty: 5 },
+    ],
+    products: [
+      { itemId: 'enigmite_powder' },
+    ],
+    profession: 'alchemy',
+  },
+  {
+    id: 'refined_yarn_3',
+    ingredients: [{ itemId: 'flax' }],
+    products: [{ itemId: 'refined_yarn', qty: 3 }],
+    profession: 'weaving',
+  },
+  {
+    id: 'refined_cotton_1',
+    ingredients: [{ itemId: 'refined_yarn', qty: 10 }],
+    products: [{ itemId: 'refined_cotton' }],
+    profession: 'weaving',
+  },
+  {
+    id: 'pig_iron_ingot_1',
+    ingredients: [
+      { itemId: 'iron_ore' },
+      { itemId: 'coal', qty: 2 },
+    ],
+    products: [{ itemId: 'pig_iron_ingot' }],
+    profession: 'smelting',
+  },
+  {
+    id: 'sandstone_polishers_1',
+    ingredients: [
+      { itemId: 'raw_ore_of_limestone', qty: 2 },
+      { itemId: 'limpid_azure_water' },
+    ],
+    products: [{ itemId: 'sandstone_polishers' }],
+    profession: 'gemcrafting',
+  },
+  {
+    id: 'flour_1',
+    ingredients: [
+      { itemId: 'wheat', qty: 3 },
+    ],
+    products: [{ itemId: 'flour' }],
+    profession: 'culinary',
+  },
+  {
+    id: 'pine_lumber_1',
+    ingredients: [{ itemId: 'pine_timber', qty: 3 }],
+    products: [{ itemId: 'pine_lumber' }],
+    profession: 'artisanry',
+  },
+  {
+    id: 'natron_1',
+    ingredients: [
+      { itemId: 'raw_ore_of_limestone' },
+      { itemId: 'rock_salt' },
+      { itemId: 'boiled_water' },
+    ],
+    products: [{ itemId: 'natron' }],
+    profession: 'alchemy',
+  },
+  {
+    id: 'boiled_water_1',
+    ingredients: [{ itemId: 'limpid_azure_water', qty: 9 }],
+    products: [{ itemId: 'boiled_water' }],
+    profession: 'alchemy',
+  },
+  {
+    id: 'mixing_agent_1',
+    profession: 'alchemy',
+    ingredients: [
+      { itemId: 'tartberry_juice', qty: 7 },
+      { itemId: 'boiled_water' },
+    ],
+    products: [{ itemId: 'mixing_agent' }],
+  },
+  {
+    id: 'botanic_growth_powder_1',
+    profession: 'culinary',
+    ingredients: [
+      { itemId: 'tender_plant_stems' },
+      { itemId: 'buds' },
+    ],
+    products: [{ itemId: 'botanic_growth_powder' }],
+  },
+]

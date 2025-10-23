@@ -1,0 +1,111 @@
+export default [
+  {
+    materialId: 'andra_enigmite',
+    regular: [
+      'engram_dust_crystals',
+      'raw_ore_of_quartz',
+      'raw_ore_of_spodumene',
+      'raw_ore_of_tourmaline',
+      'derived_pigment_epic',
+      'raw_ore_of_enigmite',
+      'clay',
+      'fine_sand',
+    ],
+    source: 'gathering.gemology',
+  },
+  {
+    materialId: 'raw_ore_of_limestone',
+    regular: [
+      'engram_dust_crystals',
+      'raw_ore_of_limestone',
+      'rock_salt',
+      'alum',
+      'clay',
+      'fine_sand',
+      'limpid_azure_water',
+    ],
+    source: 'gathering.gemology',
+  },
+  {
+    materialId: 'baru_ore',
+    regular: [
+      'engram_dust_crystals',
+      'coal',
+      'iron_ore',
+      'fine_metal_sand',
+      'clay',
+      'fine_sand',
+      'limpid_azure_water',
+    ],
+    source: 'gathering.mineralogy',
+  },
+  {
+    materialId: 'twig',
+    regular: [
+      'engram_dust_crystals',
+      'resin',
+      'twig',
+    ],
+    source: 'gathering.botany',
+  },
+  {
+    materialId: 'wheat',
+    regular: [
+      'engram_dust_crystals',
+      'wheat',
+      'hay',
+    ],
+    source: 'gathering.botany',
+  },
+  {
+    materialId: 'meadow_mushroom',
+    regular: [
+      'engram_dust_crystals',
+      'buds',
+      'natural_pigment_red',
+      'natural_pigment_legendary',
+      'base_soil',
+    ],
+    source: 'gathering.botany',
+  },
+  {
+    materialId: 'sweet_berry',
+    regular: [
+      'engram_dust_crystals',
+      'natural_pigment_epic',
+      'tartberry_juice',
+    ],
+    source: 'gathering.botany',
+  },
+  {
+    materialId: 'flax',
+    regular: [
+      'engram_dust_crystals',
+      'flax',
+      'tender_plant_stems',
+      'knotted_plant_stems',
+      'seedlings',
+      'natural_pigment_green',
+      'hay',
+    ],
+    source: 'gathering.botany',
+  },
+  {
+    materialId: 'pine_timber',
+    regular: ['pine_timber'],
+    source: 'homestead.buy',
+  },
+  {
+    materialId: 'raw_ore_of_emerald',
+    source: 'gathering.gemology',
+    regular: [
+      'engram_dust_crystals',
+      'raw_ore_of_quartz',
+      'raw_ore_of_emerald',
+      'derived_pigment_green',
+      'clay',
+      'fine_sand',
+      'limpid_azure_water',
+    ],
+  },
+]

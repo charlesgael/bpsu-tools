@@ -1,0 +1,16 @@
+[
+  {
+    "label": "⚡Run dev server",
+    "command": "bun dev",
+    "reveal": "always",
+    "hide": "on_success"
+  },
+  {
+    "label": "🦄 Run eslint",
+    "command": "bun eslint",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "hide": "on_success"
+  }
+]

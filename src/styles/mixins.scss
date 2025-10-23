@@ -1,0 +1,4 @@
+@mixin color-contrast($bg) {
+  color: $bg;
+  filter: invert(1) grayscale(1.3) brightness(1) contrast(9000);
+}
