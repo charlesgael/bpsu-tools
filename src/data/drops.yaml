@@ -1,0 +1,420 @@
+# Botany
+# Botany/Mushroom
+- materialId: meadow_mushroom
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - buds
+    - base_soil
+    - natural_pigment_red
+    - natural_pigment_legendary
+- materialId: glowshroom
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - buds
+    - base_soil
+    - natural_pigment_green
+- materialId: granny_pine
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - buds
+    - base_soil
+    - natural_pigment_cyan
+    - natural_pigment_blue
+# Botany/Fruit
+- materialId: sweet_berry
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - tartberry_juice
+    - natural_pigment_epic
+- materialId: umu_fruit
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - tartberry_juice
+    - natural_pigment_red
+    - natural_pigment_legendary
+- materialId: azure_fruit
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - tartberry_juice
+    - natural_pigment_cyan
+    - natural_pigment_blue
+# Botany/Herb
+- materialId: flax
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - flax
+    - tender_plant_stems
+    - knotted_plant_stems
+    - seedlings
+    - hay
+    - natural_pigment_green
+- materialId: pink_musk
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - knotted_plant_stems
+    - robust_plant_stems
+    - seedlings
+    - hay
+    - natural_pigment_red
+- materialId: asteria_cotton
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - cotton
+    - knotted_plant_stems
+    - robust_plant_stems
+    - seedlings
+    - hay
+    - natural_pigment_green
+- materialId: whispering_orchid
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - knotted_plant_stems
+    - robust_plant_stems
+    - seedlings
+    - hay
+    - natural_pigment_epic
+# Botany/...
+- materialId: helmflower
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - tender_plant_stems
+    - knotted_plant_stems
+    - seedlings
+    - hay
+    - natural_pigment_green
+- materialId: snowflake_parsley
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - tender_plant_stems
+    - knotted_plant_stems
+    - seedlings
+    - hay
+    - natural_pigment_cyan
+    - natural_pigment_blue
+- materialId: twig
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - resin
+    - twig
+- materialId: wood_branch
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - silkworm_cocoons
+    - tree_resin
+    - resin
+    - twig
+- materialId: branch_cluster
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - silkworm_cocoons
+    - tree_resin
+    - resin
+    - twig
+- materialId: wheat
+  source: gathering.botany
+  regular:
+    - engram_dust_crystals
+    - wheat
+    - hay
+- materialId: firefly
+  source: gathering.botany
+  regular:
+    - firefly
+- materialId: raw_fish_meat
+  source: gathering.botany
+  regular:
+    - raw_fish_meat
+- materialId: scallop
+  source: gathering.botany
+  regular:
+    - scallop
+
+# Gemology
+# Gemology/Ruby
+# Gemology/Sapphire
+- materialId: raw_ore_of_sapphire
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_quartz
+    - raw_ore_of_sapphire
+    - derived_pigment_cyan
+    - derived_pigment_blue
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: rich_ore_of_sapphire
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_celestine
+    - raw_ore_of_starburst_spar
+    - derived_pigment_cyan
+    - derived_pigment_blue
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: sapphire_cluster
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_starburst_spar
+    - derived_pigment_cyan
+    - derived_pigment_blue
+    - clay
+    - fine_sand
+    - limpid_azure_water
+# Gemology/Emerald
+- materialId: raw_ore_of_emerald
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_quartz
+    - raw_ore_of_emerald
+    - clay
+    - fine_sand
+    - limpid_azure_water
+    - derived_pigment_green
+- materialId: rich_ore_of_emerald
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_peridot
+    - raw_ore_of_cyan_bellstone
+    - clay
+    - fine_sand
+    - limpid_azure_water
+    - derived_pigment_green
+- materialId: emerald_cluster
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_cyan_bellstone
+    - clay
+    - fine_sand
+    - limpid_azure_water
+    - derived_pigment_green
+# Gemology/Topaz
+- materialId: raw_ore_of_topaz
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_quartz
+    - raw_ore_of_topaz
+    - clay
+    - fine_sand
+    - limpid_azure_water
+    - natural_pigment_yellow
+    - derived_pigment_legendary
+- materialId: rich_ore_of_topaz
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_sunstone
+    - raw_ore_of_titanite
+    - clay
+    - fine_sand
+    - limpid_azure_water
+    - natural_pigment_yellow
+    - derived_pigment_legendary
+- materialId: topaz_cluster
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_orange_spinel
+    - raw_ore_of_topaz_2
+    - clay
+    - fine_sand
+    - limpid_azure_water
+    - natural_pigment_yellow
+    - derived_pigment_legendary
+# Gemology/...
+- materialId: raw_ore_of_limestone
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_limestone
+    - rock_salt
+    - alum
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: raw_ore_of_shale
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_shale
+    - rock_salt
+    - alum
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: raw_ore_of_granite
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_quartz
+    - raw_ore_of_granite
+    - rock_salt
+    - alum
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: andra_enigmite
+  source: gathering.gemology
+  regular:
+    - engram_dust_crystals
+    - raw_ore_of_quartz
+    - raw_ore_of_spodumene
+    - raw_ore_of_tourmaline
+    - raw_ore_of_enigmite
+    - clay
+    - fine_sand
+    - derived_pigment_epic
+
+# Mineralogy
+# Mineralogy/Baru
+- materialId: baru_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - iron_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: baru_rich_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - iron_ore
+    - cobalt_iron_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: baru_pure_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - iron_ore
+    - cobalt_iron_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+# Mineralogy/Azte
+- materialId: azte_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - copper_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: azte_rich_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - copper_ore
+    - lustrous_copper_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: azte_pure_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - copper_ore
+    - lustrous_copper_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+# Mineralogy/Luna
+- materialId: azte_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - tin_ore
+    - zinc_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: azte_rich_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - tin_ore
+    - zinc_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: azte_pure_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - tin_ore
+    - zinc_ore
+    - mithril_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+# Mineralogy/...
+- materialId: stokes_rich_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - copper_ore
+    - shimmergold_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+- materialId: stokes_pure_ore
+  source: gathering.mineralogy
+  regular:
+    - engram_dust_crystals
+    - coal
+    - copper_ore
+    - shimmergold_ore
+    - fine_metal_sand
+    - clay
+    - fine_sand
+    - limpid_azure_water
+
+# Homestead
+- materialId: pine_timber
+  source: homestead.buy
+  regular:
+    - pine_timber

@@ -23,6 +23,7 @@ item:
   fast_burning_powder: Fast-burning Powder
   baru_ore: Baru Ore
   baru_rich_ore: Baru Rich Ore
+  baru_pure_ore: Baru Pure Ore
   azte_ore: Azte Ore
   azte_rich_ore: Azte Rich Ore
   azte_pure_ore: Azte Pure Ore
@@ -31,6 +32,7 @@ item:
   luna_pure_ore: Luna Pure Ore
   stokes_ore: Stokes Ore
   stokes_rich_ore: Stokes Rich Ore
+  stokes_pure_ore: Stokes Pure Ore
   pig_iron_ingot: Pig Iron Ingot
   pig_iron_rivet: Pig Iron Rivet
   pig_iron_plate: Pig Iron Plate
@@ -376,3 +378,14 @@ item:
   jellyfish: Jellyfish
   coral: Coral
   mixing_agent: Mixing Agent
+  wood_branch: Wood Branch
+  branch_cluster: Branch Cluster
+  rich_ore_of_ruby: Rich Ore of Ruby
+  ruby_cluster: Ruby Cluster
+  rich_ore_of_sapphire: Rich Ore of Sapphire
+  sapphire_cluster: Sapphire Cluster
+  rich_ore_of_topaz: Rich Ore of Topaz
+  topaz_cluster: Topaz Cluster
+  rich_ore_of_emerald: Rich Ore of Emerald
+  emerald_cluster: Emerald Cluster
+  raw_ore_of_topaz_2: Raw Ore of Topaz

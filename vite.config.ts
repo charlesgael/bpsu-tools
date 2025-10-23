@@ -1,6 +1,7 @@
 import path from 'node:path'
 import process from 'node:process'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
+import yaml from '@modyfi/vite-plugin-yaml'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import Vue from '@vitejs/plugin-vue'
 import Unocss from 'unocss/vite'
@@ -119,6 +120,10 @@ export default defineConfig({
       compositionOnly: true,
       fullInstall: true,
       include: [path.resolve(__dirname, 'locales/**')],
+    }),
+
+    yaml({
+      exclude: ['./locales/*'],
     }),
 
     // https://github.com/webfansplz/vite-plugin-vue-devtools

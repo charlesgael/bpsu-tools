@@ -45,11 +45,11 @@ function buildDb(wishlist: Wish[]) {
     const countSolutions = drops.regular.length + drops.focused.length + recipes.length
     const final = countSolutions === 0
     let solution: Satisfaction | undefined
-    if (drops.regular.length === 1)
+    if (drops.regular.length)
       solution = { regular: drops.regular[0], type: 'regular' }
-    else if (recipes.length === 1)
+    else if (recipes.length)
       solution = { recipe: recipes[0], type: 'recipe' }
-    else if (drops.focused.length === 1)
+    else if (drops.focused.length)
       solution = { focused: drops.focused[0], type: 'focused' }
 
     db[materialId] = {
@@ -169,8 +169,8 @@ export function findSolution(wishlist: Wish[]) {
       }
     })
 
-  // Compute multiples
-  computeMultiples(dropsRegular)
+  execMultiples(dropsRegular)
+  execMultiples(dropsFocused)
 
   const farmed = [
     ...Object.values(dropsRegular).flatMap(it => it.provides.map(p => p.material)),
@@ -194,6 +194,13 @@ export function findSolution(wishlist: Wish[]) {
   }
 }
 
+function execMultiples(drops: Record<string, { material: string, provides: WishFulfilled[], source?: string }>) {
+  computeMultiples(drops)
+  removeOnlyMultiples(drops)
+  resetMultiples(drops)
+  computeMultiples(drops)
+}
+
 function computeMultiples(drops: Record<string, { material: string, provides: WishFulfilled[], source?: string }>) {
   const provides = Object.values(drops)
     .flatMap(it => it.provides)
@@ -207,4 +214,17 @@ function computeMultiples(drops: Record<string, { material: string, provides: Wi
   provides
     .filter(it => dups.includes(it.material))
     .forEach(it => it.multiple = true)
+}
+
+function removeOnlyMultiples(drops: Record<string, { material: string, provides: WishFulfilled[], source?: string }>) {
+  Object.entries(drops)
+    .filter(([, value]) => value.provides.every(it => it.multiple))
+    .map(([key]) => key)
+    .forEach(it => delete drops[it])
+}
+
+function resetMultiples(drops: Record<string, { material: string, provides: WishFulfilled[], source?: string }>) {
+  Object.values(drops)
+    .flatMap(it => it.provides)
+    .forEach(it => it.multiple = false)
 }
