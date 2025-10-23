@@ -35,6 +35,10 @@ jobs:
 
       - name: Build
         run: bun run build
+        env:
+          NODE_ENV: production
+          # Désactive le préchargement des web fonts pour éviter les timeouts
+          VITE_UNOCSS_PREFLIGHTS: false
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
