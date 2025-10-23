@@ -1,4 +1,5 @@
 import path from 'node:path'
+import process from 'node:process'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import Vue from '@vitejs/plugin-vue'
@@ -18,6 +19,7 @@ import generateSitemap from 'vite-ssg-sitemap'
 import 'vitest/config'
 
 export default defineConfig({
+  base: process.env.NODE_ENV === 'development' ? '/' : '/bpsu-tools/',
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,

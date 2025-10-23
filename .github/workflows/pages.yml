@@ -40,11 +40,6 @@ jobs:
           # Désactive le préchargement des web fonts pour éviter les timeouts
           VITE_UNOCSS_PREFLIGHTS: false
 
-      - name: Fix paths for GitHub Pages
-        run: |
-          sed -i 's|href="/|href="./|g' dist/index.html
-          sed -i 's|src="/|src="./|g' dist/index.html
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

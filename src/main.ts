@@ -17,7 +17,7 @@ export const createApp = ViteSSG(
   {
     routes: setupLayouts(routes),
     base: import.meta.env.BASE_URL,
-    history: import.meta.env.MODE === 'development' ? createWebHistory() : createWebHashHistory(),
+    history: import.meta.env.MODE === 'development' ? createWebHistory() : createWebHashHistory('/bpsu-tools/'),
   },
   async (ctx) => {
     // install all modules under `modules/`
