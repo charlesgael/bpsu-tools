@@ -26,6 +26,17 @@ const recipes = computed(() => {
     <div class="absolute left-50% top-50% select-none shadow-2xl -translate-1/2" @click.stop>
       <material-symbols:close class="absolute right-2 top-2 cursor-pointer text-red hover:bg-red hover:bg-op-20 hover:text-red-600" title="Close" @click="emit('close')" />
       <div class="mt-1px max-h-90vh w-250 overflow-y-auto bg-white px-4 pb-4">
+        <!-- Unknown solutions -->
+        <template v-if="solution.unknown.length">
+          <h1 class="my-4 text-xl">
+            Unknown
+          </h1>
+          <ul class="ml-4 w-80">
+            <li v-for="it in solution.unknown" :key="it.material">
+              <MaterialDisplay :id="it.material" :qty="it.qty" />
+            </li>
+          </ul>
+        </template>
         <!-- Drops block -->
         <template v-if="Object.entries(dropsRegular).length || Object.entries(dropsFocused).length">
           <h1 class="my-4 text-xl">
@@ -37,48 +48,23 @@ const recipes = computed(() => {
             </h2>
             <div class="grid cols-3 gap-2 even-grid even-grid-flow-dense">
               <div v-for="drop in drops" :key="drop.material" class="flex flex-col rounded-t bg-gray-100 p-1 pb-0 shadow">
-                <div class="mb-1 flex shrink-0 gap-1">
-                  <img :src="findMat(drop.material).icon" width="16" />
-                  <div class="flex-1">
-                    {{ t(`item.${drop.material}`) }}
-                  </div>
-                </div>
+                <MaterialDisplay :id="drop.material" class="mb-1 shrink-0" />
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
-                  <div v-for="provided in drop.provides" :key="provided.material" class="flex items-center gap-1 px-2 hover:bg-gray-300">
-                    <img :src="findMat(provided.material).icon" width="16" />
-                    <div class="flex-1" :class="{ italic: provided.multiple }">
-                      {{ t(`item.${provided.material}`) }}
-                    </div>
-                    <div class="text-xs font-mono">
-                      x{{ provided.qty }}
-                    </div>
-                  </div>
+                  <MaterialDisplay v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty" class="px-2 hover:bg-gray-300" />
                 </div>
               </div>
             </div>
           </template>
+
           <template v-for="[group, drops] in Object.entries(dropsFocused)" :key="group">
             <h2 class="my-2 text-lg">
               {{ t(`drop.focused.${group}`) }}
             </h2>
             <div class="grid cols-3 gap-2 even-grid even-grid-flow-dense">
               <div v-for="drop in drops" :key="drop.material" class="flex flex-col rounded bg-gray-100 p-2 pb-0 shadow">
-                <div class="mb-1 flex shrink-0 gap-1">
-                  <img :src="findMat(drop.material).icon" width="16" />
-                  <div class="flex-1">
-                    {{ t(`item.${drop.material}`) }}
-                  </div>
-                </div>
+                <MaterialDisplay :id="drop.material" class="mb-1 shrink-0" />
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
-                  <div v-for="provided in drop.provides" :key="provided.material" class="flex items-center gap-1 px-2 hover:bg-gray-300">
-                    <img :src="findMat(provided.material).icon" width="16" />
-                    <div class="flex-1" :class="{ italic: provided.multiple }">
-                      {{ t(`item.${provided.material}`) }}
-                    </div>
-                    <div class="text-xs font-mono">
-                      x{{ provided.qty }}
-                    </div>
-                  </div>
+                  <MaterialDisplay v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty" class="px-2 hover:bg-gray-300" />
                 </div>
               </div>
             </div>
@@ -98,38 +84,13 @@ const recipes = computed(() => {
                 <div class="absolute right-4 top-1 rotate-20 text-xl font-mono">
                   x{{ recipe.times }}
                 </div>
-                <div v-for="product in recipe.material.products" :key="product.itemId" class="mb-1 flex shrink-0 gap-1">
-                  <img :src="findMat(product.itemId).icon" width="16" />
-                  <div class="flex-1">
-                    {{ t(`item.${product.itemId}`) }}
-                  </div>
-                </div>
+                <MaterialDisplay v-for="product in recipe.material.products" :id="product.itemId" :key="product.itemId" :qty="product.qty" class="mb-1 shrink-0" />
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
-                  <div v-for="provided in recipe.material.ingredients" :key="provided.itemId" class="flex items-center gap-1 px-2 hover:bg-gray-300">
-                    <img :src="findMat(provided.itemId).icon" width="16" />
-                    <div class="flex-1">
-                      {{ t(`item.${provided.itemId}`) }}
-                    </div>
-                    <div class="text-xs font-mono">
-                      x{{ provided.qty ?? 1 }}
-                    </div>
-                  </div>
+                  <MaterialDisplay v-for="provided in recipe.material.ingredients" :id="provided.itemId" :key="provided.itemId" :qty="provided.qty ?? 1" class="px-2 hover:bg-gray-300" />
                 </div>
               </div>
             </div>
           </template>
-        </template>
-        <!-- Unknown solutions -->
-        <template v-if="solution.unknown.length">
-          <h1 class="my-4 text-xl">
-            Unknown
-          </h1>
-          <ul class="pl-4">
-            <li v-for="it in solution.unknown" :key="it.material" class="flex gap-1">
-              <img :src="findMat(it.material).icon" width="16" />
-              <div>{{ t(`item.${it.material}`) }}</div>
-            </li>
-          </ul>
         </template>
       </div>
     </div>

@@ -11,6 +11,7 @@ const {
   remove: removeWish,
   updateQty,
 } = useWishlistStore()
+
 const wishedMats = computed(() => wishes.map(it => ({ ...it, icon: findMat(it.material).icon })))
 
 const search = ref('')
@@ -50,26 +51,19 @@ function makeAWish() {
             @click="autoselect"
           />
         </div>
-        <div ref="scrollEl" class="selectable-items overflow-y-auto rounded bg-white bg-op-5 text-white shadow-inner">
-          <div
-            v-for="mat in data" :key="mat.id"
-            class="float-left mb-1 mr-1 w-50 flex cursor-pointer select-none gap-1 rounded-sm bg-white bg-op-0 transition-all hover:bg-op-40"
+        <div ref="scrollEl" class="selectable-items overflow-y-auto rounded bg-white bg-op-5 pl-1 pt-1 text-white shadow-inner">
+          <MaterialDisplay
+            v-for="mat in data" :id="mat.id"
+            :key="mat.id"
+            class="float-left mb-1 mr-1 w-50 cursor-pointer select-none rounded-sm bg-white bg-op-0 transition-all hover-bg-op-40"
             @click="addWish(mat.id)"
-          >
-            <img class="shrink-0" :src="mat.icon" height="16" width="16" />
-            <div class="flex-1 overflow-hidden text-ellipsis text-nowrap">
-              {{ t(`item.${mat.id}`) }}
-            </div>
-          </div>
+          />
         </div>
       </div>
       <div class="flex flex-col">
         <div class="mats-list flex-1">
           <div v-for="wish in wishedMats" :key="wish.material" class="mb-1 flex gap-1 flex-items-center rounded px-1 color-white">
-            <img class="shrink-0" :src="wish.icon" height="16" width="16" />
-            <div>
-              {{ t(`item.${wish.material}`) }}
-            </div>
+            <MaterialDisplay :id="wish.material" />
             <input
               v-model="wish.qty" class="mx-1 w-15 flex-1 border-none bg-transparent p-1 text-right outline-none" @input="updateQty(wish.material, ($event.target as any).value)"
               @click="autoselect"

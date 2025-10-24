@@ -10,6 +10,8 @@ declare module 'vue' {
   export interface GlobalComponents {
     DisplayWishlist: typeof import('./components/DisplayWishlist.vue')['default']
     LightRays: typeof import('./components/LightRays.vue')['default']
+    Material: typeof import('./components/Material.vue')['default']
+    MaterialDisplay: typeof import('./components/MaterialDisplay.vue')['default']
     'MaterialSymbols:close': typeof import('~icons/material-symbols/close')['default']
     Menu: typeof import('./components/Menu.vue')['default']
     Particles: typeof import('./components/Particles.vue')['default']

@@ -1076,9 +1076,12 @@
   icon: 'https://assets-ng.maxroll.gg/sr-tools/assets/db/icons/items/materials/item_icons_shanhu.webp'
   rarity: rare
 - id: mixing_agent
+  icon: assets/items/mixing_agent.png
 - id: wood_branch
   icon: 'https://assets-ng.maxroll.gg/sr-tools/assets/db/icons/items/materials/item_icons_lifematerial_branch02.webp'
   ignored: true
 - id: branch_cluster
   icon: 'https://assets-ng.maxroll.gg/sr-tools/assets/db/icons/items/materials/item_icons_lifematerial_stalk03.webp'
   ignored: true
+- id: cheer_up_treat
+  icon: assets/items/cheer_up_treat.png

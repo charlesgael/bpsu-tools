@@ -1,3 +1,4 @@
+# ##################################################################################################
 # Botany
 # Botany/Mushroom
 - materialId: meadow_mushroom
@@ -144,6 +145,7 @@
   regular:
     - scallop
 
+# ##################################################################################################
 # Gemology
 # Gemology/Ruby
 # Gemology/Sapphire
@@ -287,6 +289,7 @@
     - fine_sand
     - derived_pigment_epic
 
+# ##################################################################################################
 # Mineralogy
 # Mineralogy/Baru
 - materialId: baru_ore
@@ -413,6 +416,7 @@
     - fine_sand
     - limpid_azure_water
 
+# ##################################################################################################
 # Homestead
 - materialId: pine_timber
   source: homestead.buy
