@@ -8,6 +8,13 @@ const emit = defineEmits<{
 }>()
 const { t } = useI18n()
 
+const done = ref<Record<string, boolean>>({})
+function toggleDone(...materials: string[]) {
+  for (const material of materials) {
+    done.value[material] = !done.value[material]
+  }
+}
+
 const dropsRegular = computed(() => {
   return solution.dropsRegular.groupBy(it => it.source ?? 'unknown')
 })
@@ -33,7 +40,10 @@ const recipes = computed(() => {
           </h1>
           <ul class="ml-4 w-80">
             <li v-for="it in solution.unknown" :key="it.material">
-              <MaterialDisplay :id="it.material" :qty="it.qty" />
+              <MaterialDisplay
+                :id="it.material" :qty="it.qty" class="rounded px-2"
+                :class="done[it.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'" @click="toggleDone(it.material)"
+              />
             </li>
           </ul>
         </template>
@@ -47,10 +57,16 @@ const recipes = computed(() => {
               {{ t(`drop.regular.${group}`) }}
             </h2>
             <div class="grid cols-3 gap-2 even-grid even-grid-flow-dense">
-              <div v-for="drop in drops" :key="drop.material" class="flex flex-col rounded-t bg-gray-100 p-1 pb-0 shadow">
+              <div
+                v-for="drop in drops" :key="drop.material" class="flex flex-col rounded-t bg-gray-100 p-1 pb-0 shadow"
+                :class="{ 'bg-green-50': drop.provides.every(it => done[it.material]) }"
+              >
                 <MaterialDisplay :id="drop.material" class="mb-1 shrink-0" />
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
-                  <MaterialDisplay v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty" class="px-2 hover:bg-gray-300" />
+                  <MaterialDisplay
+                    v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty" class="px-2"
+                    :class="done[provided.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'" @click="toggleDone(provided.material)"
+                  />
                 </div>
               </div>
             </div>
@@ -61,10 +77,16 @@ const recipes = computed(() => {
               {{ t(`drop.focused.${group}`) }}
             </h2>
             <div class="grid cols-3 gap-2 even-grid even-grid-flow-dense">
-              <div v-for="drop in drops" :key="drop.material" class="flex flex-col rounded bg-gray-100 p-2 pb-0 shadow">
+              <div
+                v-for="drop in drops" :key="drop.material" class="flex flex-col rounded bg-gray-100 p-2 pb-0 shadow"
+                :class="{ 'bg-green-100': drop.provides.every(it => done[it.material]) }"
+              >
                 <MaterialDisplay :id="drop.material" class="mb-1 shrink-0" />
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
-                  <MaterialDisplay v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty" class="px-2 hover:bg-gray-300" />
+                  <MaterialDisplay
+                    v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty" class="px-2"
+                    :class="done[provided.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'" @click="toggleDone(provided.material)"
+                  />
                 </div>
               </div>
             </div>
@@ -80,13 +102,19 @@ const recipes = computed(() => {
               {{ t(`profession.${group}`) }}
             </h2>
             <div class="grid cols-3 gap-2 even-grid even-grid-flow-dense">
-              <div v-for="recipe in recipeGroup.toReversed()" :key="recipe.material.id" class="relative flex flex-col rounded bg-gray-100 p-2 pb-0 shadow">
+              <div
+                v-for="recipe in recipeGroup.toReversed()" :key="recipe.material.id" class="relative flex flex-col rounded p-2 pb-0 shadow"
+                :class="done[recipe.material.id] ? 'bg-green-50' : recipe.material.ingredients.every(it => done[it.itemId]) ? 'bg-yellow-50' : 'bg-gray-100'" @click="toggleDone(recipe.material.id, ...recipe.material.products.map(it => it.itemId))"
+              >
                 <div class="absolute right-4 top-1 rotate-20 text-xl font-mono">
                   x{{ recipe.times }}
                 </div>
-                <MaterialDisplay v-for="product in recipe.material.products" :id="product.itemId" :key="product.itemId" :qty="product.qty" class="mb-1 shrink-0" />
+                <MaterialDisplay v-for="product in recipe.material.products" :id="product.itemId" :key="product.itemId" class="mb-1 shrink-0" />
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
-                  <MaterialDisplay v-for="provided in recipe.material.ingredients" :id="provided.itemId" :key="provided.itemId" :qty="provided.qty ?? 1" class="px-2 hover:bg-gray-300" />
+                  <MaterialDisplay
+                    v-for="provided in recipe.material.ingredients" :id="provided.itemId" :key="provided.itemId" :qty="provided.qty ?? 1" class="px-2"
+                    :class="done[provided.itemId] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'"
+                  />
                 </div>
               </div>
             </div>
