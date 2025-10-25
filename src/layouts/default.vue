@@ -45,8 +45,6 @@
   &-footer {
     @extend .lined, .lined-top;
     @apply relative p-4 text-center;
-
-    order: 3;
   }
 }
 .lined {

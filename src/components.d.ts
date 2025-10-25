@@ -9,10 +9,14 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     DisplayWishlist: typeof import('./components/DisplayWishlist.vue')['default']
+    InputItemQty: typeof import('./components/InputItemQty.vue')['default']
+    ItemSelector: typeof import('./components/ItemSelector.vue')['default']
     LightRays: typeof import('./components/LightRays.vue')['default']
     Material: typeof import('./components/Material.vue')['default']
     MaterialDisplay: typeof import('./components/MaterialDisplay.vue')['default']
     'MaterialSymbols:close': typeof import('~icons/material-symbols/close')['default']
+    'MaterialSymbols:viewInAr': typeof import('~icons/material-symbols/view-in-ar')['default']
+    'MaterialSymbols:viewInArOff': typeof import('~icons/material-symbols/view-in-ar-off')['default']
     Menu: typeof import('./components/Menu.vue')['default']
     Particles: typeof import('./components/Particles.vue')['default']
     README: typeof import('./components/README.md')['default']

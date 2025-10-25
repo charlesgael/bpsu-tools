@@ -39,7 +39,7 @@ function buildDb(wishlist: Wish[]) {
     }
 
     // Find recipes that at least produces this item
-    const recipes = dbRecipes.filter(it => it.products.some(prod => prod.itemId === materialId))
+    const recipes = dbRecipes.filter(it => it.products.some(prod => prod.id === materialId))
 
     // We look if we have unique solution
     const countSolutions = drops.regular.length + drops.focused.length + recipes.length
@@ -62,7 +62,7 @@ function buildDb(wishlist: Wish[]) {
     // Add items we dont already know to searchItems
     Array.prototype.push.apply(searchItems, recipes
       .flatMap(it => it.ingredients)
-      .map(it => it.itemId)
+      .map(it => it.id)
       .sort()
     // uniq
       .filter((it, idx, arr) => arr.indexOf(it) === idx)
@@ -112,12 +112,12 @@ export function findSolution(wishlist: Wish[]) {
     // If its a recipe, we need to add its ingredients to wishes(existing or not)
     if (curr.satisfied?.type === 'recipe') {
       const recipe = curr.satisfied.recipe
-      const numPerRecipe = recipe.products.find(it => it.itemId === curr.material)!.qty ?? 1
+      const numPerRecipe = recipe.products.find(it => it.id === curr.material)!.qty ?? 1
       const numExec = Math.ceil(curr.qty / numPerRecipe)
       curr.satisfied.times = numExec
 
       Array.prototype.push.apply(_wishlist, recipe.ingredients.map(it => ({
-        material: it.itemId,
+        material: it.id,
         qty: (it.qty ?? 1) * numExec,
       })))
     }
@@ -161,7 +161,7 @@ export function findSolution(wishlist: Wish[]) {
               profession: it.satisfied.recipe.profession,
               times: it.satisfied.times,
               provides: it.satisfied.recipe.products
-                .map(it => it.itemId)
+                .map(it => it.id)
                 .map(material => ({ material, qty: consolidated[material].qty ?? 0 }))
                 .filter(({ qty }) => qty !== 0),
             }

@@ -8,6 +8,8 @@ const emit = defineEmits<{
 }>()
 const { t } = useI18n()
 
+const displayFinished = ref(false)
+
 const done = ref<Record<string, boolean>>({})
 function toggleDone(...materials: string[]) {
   for (const material of materials) {
@@ -29,10 +31,26 @@ const recipes = computed(() => {
 </script>
 
 <template lang="html">
-  <div class="backdrop absolute bottom-0 left-0 right-0 top-0 z-1" @click="emit('close')">
-    <div class="absolute left-50% top-50% select-none shadow-2xl -translate-1/2" @click.stop>
-      <material-symbols:close class="absolute right-2 top-2 cursor-pointer text-red hover:bg-red hover:bg-op-20 hover:text-red-600" title="Close" @click="emit('close')" />
-      <div class="mt-1px max-h-90vh w-250 overflow-y-auto bg-white px-4 pb-4">
+  <div class="absolute bottom-0 left-0 right-0 top-0 z-1 backdrop-blur-4" @click="emit('close')">
+    <div class="absolute left-50vw top-5vh select-none shadow-2xl -translate-x-1/2" @click.stop>
+      <material-symbols:close
+        class="absolute right-2 top-2 cursor-pointer text-red hover:bg-red hover:bg-op-20 hover:text-red-600"
+        title="Close"
+        @click="emit('close')"
+      />
+      <material-symbols:view-in-ar
+        v-if="displayFinished"
+        class="absolute right-8 top-2 cursor-pointer text-gray-500 hover:bg-gray hover:bg-op-20 hover:text-gray-800"
+        title="Display finished"
+        @click="displayFinished = false"
+      />
+      <material-symbols:view-in-ar-off
+        v-if="!displayFinished"
+        class="absolute right-8 top-2 cursor-pointer text-gray-500 hover:bg-gray hover:bg-op-20 hover:text-gray-800"
+        title="Hide finished"
+        @click="displayFinished = true"
+      />
+      <div class="mt-1px max-h-90vh min-h-10vh w-250 overflow-y-auto bg-white px-4 pb-4">
         <!-- Unknown solutions -->
         <template v-if="solution.unknown.length">
           <h1 class="my-4 text-xl">
@@ -42,7 +60,9 @@ const recipes = computed(() => {
             <li v-for="it in solution.unknown" :key="it.material">
               <MaterialDisplay
                 :id="it.material" :qty="it.qty" class="rounded px-2"
-                :class="done[it.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'" @click="toggleDone(it.material)"
+                :class="done[it.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'"
+                :style="done[it.material] && !displayFinished ? 'display: none' : ''"
+                @click="toggleDone(it.material)"
               />
             </li>
           </ul>
@@ -64,8 +84,10 @@ const recipes = computed(() => {
                 <MaterialDisplay :id="drop.material" class="mb-1 shrink-0" />
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
                   <MaterialDisplay
-                    v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty" class="px-2"
-                    :class="done[provided.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'" @click="toggleDone(provided.material)"
+                    v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty"
+                    class="px-2" :class="done[provided.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'"
+                    :style="done[provided.material] && !displayFinished ? 'display: none' : ''"
+                    @click="toggleDone(provided.material)"
                   />
                 </div>
               </div>
@@ -85,7 +107,9 @@ const recipes = computed(() => {
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
                   <MaterialDisplay
                     v-for="provided in drop.provides" :id="provided.material" :key="provided.material" :qty="provided.qty" class="px-2"
-                    :class="done[provided.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'" @click="toggleDone(provided.material)"
+                    :class="done[provided.material] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'"
+                    :style="done[provided.material] && !displayFinished ? 'display: none' : ''"
+                    @click="toggleDone(provided.material)"
                   />
                 </div>
               </div>
@@ -104,16 +128,18 @@ const recipes = computed(() => {
             <div class="grid cols-3 gap-2 even-grid even-grid-flow-dense">
               <div
                 v-for="recipe in recipeGroup.toReversed()" :key="recipe.material.id" class="relative flex flex-col rounded p-2 pb-0 shadow"
-                :class="done[recipe.material.id] ? 'bg-green-50' : recipe.material.ingredients.every(it => done[it.itemId]) ? 'bg-yellow-50' : 'bg-gray-100'" @click="toggleDone(recipe.material.id, ...recipe.material.products.map(it => it.itemId))"
+                :class="done[recipe.material.id] ? 'bg-green-50' : recipe.material.ingredients.every(it => done[it.id]) ? 'bg-yellow-50' : 'bg-gray-100'"
+                @click="toggleDone(recipe.material.id, ...recipe.material.products.map(it => it.id))"
               >
                 <div class="absolute right-4 top-1 rotate-20 text-xl font-mono">
                   x{{ recipe.times }}
                 </div>
-                <MaterialDisplay v-for="product in recipe.material.products" :id="product.itemId" :key="product.itemId" class="mb-1 shrink-0" />
+                <MaterialDisplay v-for="product in recipe.material.products" :id="product.id" :key="product.id" class="mb-1 shrink-0" />
                 <div class="flex-1 rounded-t bg-gray-200 py-1 shadow-inner">
                   <MaterialDisplay
-                    v-for="provided in recipe.material.ingredients" :id="provided.itemId" :key="provided.itemId" :qty="provided.qty ?? 1" class="px-2"
-                    :class="done[provided.itemId] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'"
+                    v-for="provided in recipe.material.ingredients" :id="provided.id" :key="provided.id" :qty="provided.qty ?? 1" class="px-2"
+                    :class="done[provided.id] ? 'bg-green bg-op-10 hover:bg-op-20' : 'bg-black bg-op-0 hover:bg-op-5'"
+                    :style="done[provided.id] && !displayFinished ? 'display: none' : ''"
                   />
                 </div>
               </div>

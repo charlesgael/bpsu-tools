@@ -4,11 +4,10 @@
 - id: sandstone_polishers_1
   profession: gemcrafting
   ingredients:
-    - itemId: raw_ore_of_limestone
+    - id: raw_ore_of_limestone
       qty: 2
-    - itemId: limpid_azure_water
-  products:
-    - itemId: sandstone_polishers
+    - limpid_azure_water
+  products: [sandstone_polishers]
 
 # ##################################################################################################
 # Artisanry
@@ -16,10 +15,9 @@
 - id: pine_lumber_1
   profession: artisanry
   ingredients:
-    - itemId: pine_timber
+    - id: pine_timber
       qty: 3
-  products:
-    - itemId: pine_lumber
+  products: [pine_lumber]
 
 # ##################################################################################################
 # Weaving
@@ -27,18 +25,41 @@
 - id: refined_yarn_3
   profession: weaving
   ingredients:
-    - itemId: flax
+    - id: flax
   products:
-    - itemId: refined_yarn
+    - id: refined_yarn
       qty: 3
 
 - id: refined_cotton_1
   profession: weaving
   ingredients:
-    - itemId: refined_yarn
+    - id: refined_yarn
       qty: 10
+  products: [refined_cotton]
+
+- id: hand_spun_canvas_1
+  profession: weaving
+  ingredients:
+    - id: hand_spun_yarn
+      qty: 4
+    - beeswax
+  products: [hand_spun_canvas]
+
+- id: hand_spun_yarn_1
+  profession: weaving
+  ingredients:
+    - cotton
   products:
-    - itemId: refined_cotton
+    - id: hand_spun_yarn
+      qty: 3
+
+- id: refined_canvas_1
+  profession: weaving
+  ingredients:
+    - id: refined_yarn
+      qty: 3
+    - beeswax
+  products: [refined_canvas]
 
 # ##################################################################################################
 # Culinary
@@ -46,37 +67,34 @@
 - id: flour_1
   profession: culinary
   ingredients:
-    - itemId: wheat
+    - id: wheat
       qty: 3
-  products:
-    - itemId: flour
+  products: [flour]
 
 - id: botanic_growth_powder_1
   profession: culinary
   ingredients:
-    - itemId: tender_plant_stems
-    - itemId: buds
-  products:
-    - itemId: botanic_growth_powder
+    - tender_plant_stems
+    - buds
+  products: [botanic_growth_powder]
 
 - id: cheer_up_treat_1
   profession: culinary
   focus: 20
   ingredients:
-    - itemId: emerald_apple
+    - id: emerald_apple
       qty: 14
-    - itemId: honey
-    - itemId: flour
+    - honey
+    - id: flour
       qty: 2
-  products:
-    - itemId: cheer_up_treat
+  products: [cheer_up_treat]
 
 - id: honey_1
   profession: culinary
   ingredients:
-    - itemId: beehive
+    - id: beehive
       qty: 3
-  products: [itemId: honey]
+  products: [honey]
 
 # ##################################################################################################
 # Alchemy
@@ -84,38 +102,57 @@
 - id: enigmite_powder_1
   profession: alchemy
   ingredients:
-    - itemId: raw_ore_of_enigmite
+    - id: raw_ore_of_enigmite
       qty: 4
-    - itemId: twig
+    - id: twig
       qty: 5
-  products:
-    - itemId: enigmite_powder
+  products: [enigmite_powder]
 
 - id: natron_1
   profession: alchemy
   ingredients:
-    - itemId: raw_ore_of_limestone
-    - itemId: rock_salt
-    - itemId: boiled_water
-  products:
-    - itemId: natron
+    - raw_ore_of_limestone
+    - rock_salt
+    - boiled_water
+  products: [natron]
 
 - id: boiled_water_1
   profession: alchemy
   ingredients:
-    - itemId: limpid_azure_water
+    - id: limpid_azure_water
       qty: 9
-  products:
-    - itemId: boiled_water
+  products: [boiled_water]
 
 - id: mixing_agent_1
   profession: alchemy
   ingredients:
-    - itemId: tartberry_juice
+    - id: tartberry_juice
       qty: 7
-    - itemId: boiled_water
-  products:
-    - itemId: mixing_agent
+    - boiled_water
+  products: [mixing_agent]
+
+- id: rubber_1
+  profession: alchemy
+  ingredients:
+    - id: resin
+      qty: 4
+  products: [rubber]
+
+- id: beeswax_1
+  profession: alchemy
+  ingredients:
+    - id: beehive
+      qty: 3
+  products: [beeswax]
+
+- id: fired_brick_1
+  profession: alchemy
+  ingredients:
+    - id: clay
+      qty: 7
+    - id: hay
+      qty: 3
+  products: [fired_brick]
 
 # ##################################################################################################
 # Smelting
@@ -123,8 +160,7 @@
 - id: pig_iron_ingot_1
   profession: smelting
   ingredients:
-    - itemId: iron_ore
-    - itemId: coal
+    - iron_ore
+    - id: coal
       qty: 2
-  products:
-    - itemId: pig_iron_ingot
+  products: [pig_iron_ingot]
