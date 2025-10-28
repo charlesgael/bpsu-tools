@@ -1,3 +1,23 @@
+quest:
+  bureau_commissions: Bureau Commissions
+  elite_hunt: Elite Hunt
+  focus_spent: Focus Spent
+  gear_exchange_store: Gear Exchange Store
+  guild_cargo: Guild Cargo
+  guild_check_in: Guild Check-In
+  homestead_commissions: Homestead Commissions
+  mistery_store: Mistery Store
+  unstable_space: Unstable Space
+  world_boss_cruisade: World Boss Cruisade
+  world_hunt: World Hunt
+  friendship_store: Friendship Store
+  guild_store: Guild Store
+  honor_coin_store: Honor Count Store
+  life_skill_quests: Life Skill Quests
+  orb_store: Orb Store
+  reputation_store: Reputation Store
+  season_pass_store: Season Pass Store
+  stimen_vaults: Stimen Vaults
 drop:
   regular:
     gathering:
@@ -6,6 +26,9 @@ drop:
       mineralogy: Mineralogy (regular)
     homestead:
       buy: Buy from homestead
+  focused:
+    gathering:
+      botany: Botany (focused)
 profession:
   botany: Botany
   mineralogy: Mineralogy

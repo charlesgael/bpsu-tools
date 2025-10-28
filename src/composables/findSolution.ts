@@ -78,7 +78,6 @@ export function findSolution(wishlist: Wish[]) {
     provides: WishFulfilled[]
     source?: string
   }> = {}
-
   const dropsFocused: Record<string, {
     material: string
     provides: WishFulfilled[]
@@ -150,8 +149,8 @@ export function findSolution(wishlist: Wish[]) {
             dropsFocused[it.satisfied.focused.materialId] = {
               material: it.satisfied.focused.materialId,
               source: it.satisfied.focused.source,
-              provides: it.satisfied.focused.regular!
-                .map(material => ({ material, qty: consolidated[material].qty ?? 0 }))
+              provides: it.satisfied.focused.focused!
+                .map(material => ({ material, qty: consolidated[material]?.qty ?? 0 }))
                 .filter(({ qty }) => qty !== 0),
             }
             break

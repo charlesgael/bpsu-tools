@@ -3,12 +3,14 @@ import { acceptHMRUpdate, defineStore } from 'pinia'
 
 export const useWishlistStore = defineStore('Wishlist', () => {
   const wishes = ref<Wish[]>([])
-  const clear = () => wishes.value.length = 0
-  const add = (material: string) => {
+  const clear = () => {
+    wishes.value.length = 0
+  }
+  const add = (material: string, qty = 1) => {
     if (wishes.value.every(it => it.material !== material)) {
       wishes.value.push({
         material,
-        qty: 1,
+        qty,
       })
     }
   }
@@ -33,7 +35,10 @@ export const useWishlistStore = defineStore('Wishlist', () => {
     remove,
   }
 }, {
-  persist: true,
+  persist: {
+    storage: sessionStorage,
+    pick: ['wishes'],
+  },
 })
 
 if (import.meta.hot)

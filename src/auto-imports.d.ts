@@ -150,6 +150,7 @@ declare global {
   const useCssVars: typeof import('vue')['useCssVars']
   const useCurrentElement: typeof import('@vueuse/core')['useCurrentElement']
   const useCycleList: typeof import('@vueuse/core')['useCycleList']
+  const useDailiesStore: typeof import('./stores/dailies')['useDailiesStore']
   const useDark: typeof import('@vueuse/core')['useDark']
   const useDateFormat: typeof import('@vueuse/core')['useDateFormat']
   const useDebounce: typeof import('@vueuse/core')['useDebounce']
@@ -318,6 +319,9 @@ declare global {
   // @ts-ignore
   export type { Wish } from './composables/findSolution'
   import('./composables/findSolution')
+  // @ts-ignore
+  export type { Tasks } from './stores/dailies'
+  import('./stores/dailies')
 }
 
 // for vue template auto import
@@ -469,6 +473,7 @@ declare module 'vue' {
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
     readonly useCurrentElement: UnwrapRef<typeof import('@vueuse/core')['useCurrentElement']>
     readonly useCycleList: UnwrapRef<typeof import('@vueuse/core')['useCycleList']>
+    readonly useDailiesStore: UnwrapRef<typeof import('./stores/dailies')['useDailiesStore']>
     readonly useDark: UnwrapRef<typeof import('@vueuse/core')['useDark']>
     readonly useDateFormat: UnwrapRef<typeof import('@vueuse/core')['useDateFormat']>
     readonly useDebounce: UnwrapRef<typeof import('@vueuse/core')['useDebounce']>

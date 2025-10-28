@@ -22,5 +22,7 @@ declare module 'vue' {
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Timeline: typeof import('./components/Timeline.vue')['default']
+    VueCal: typeof import('vue-cal')['VueCal']
   }
 }

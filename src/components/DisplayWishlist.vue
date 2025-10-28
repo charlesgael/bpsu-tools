@@ -17,6 +17,12 @@ function toggleDone(...materials: string[]) {
   }
 }
 
+const { escape } = useMagicKeys()
+watch(escape, (v) => {
+  if (v)
+    emit('close')
+})
+
 const dropsRegular = computed(() => {
   return solution.dropsRegular.groupBy(it => it.source ?? 'unknown')
 })
@@ -31,7 +37,7 @@ const recipes = computed(() => {
 </script>
 
 <template lang="html">
-  <div class="absolute bottom-0 left-0 right-0 top-0 z-1 backdrop-blur-4" @click="emit('close')">
+  <div class="absolute bottom-0 left-0 right-0 top-0 z-1 backdrop-blur-4">
     <div class="absolute left-50vw top-5vh select-none shadow-2xl -translate-x-1/2" @click.stop>
       <material-symbols:close
         class="absolute right-2 top-2 cursor-pointer text-red hover:bg-red hover:bg-op-20 hover:text-red-600"

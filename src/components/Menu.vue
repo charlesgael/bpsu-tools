@@ -3,13 +3,17 @@ const router = useRouter()
 const route = useRoute()
 
 class Item {
-  constructor(public page: string, public label: string, public color?: string) { }
+  constructor(public page: string, public label: string, public color?: string, public dev = false) { }
 }
 
+const dev = import.meta.env.MODE === 'development'
+
 const items: Item[] = [
+  new Item('/', 'Dashboard', 'var(--green-100)'),
   new Item('/components', 'Components', 'var(--purple-800)'),
   new Item('/wishlist', 'Wish list', 'var(--cyan-800)'),
-]
+  new Item('/recipe-maker', 'Recipe maker', 'var(--orange-300)', true),
+].filter(it => dev || !it.dev)
 </script>
 
 <template>

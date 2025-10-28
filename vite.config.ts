@@ -76,6 +76,7 @@ export default defineConfig({
       dts: 'src/components.d.ts',
       resolvers: [
         IconsResolver({ prefix: '' }),
+        (name: string) => name === 'VueCal' ? { name: 'VueCal', from: 'vue-cal' } : null,
       ],
     }),
 
