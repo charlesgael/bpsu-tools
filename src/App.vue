@@ -18,7 +18,7 @@ useHead({
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: '/favicon.svg',
+      href: import.meta.env.MODE === 'development' ? '/favicon.svg' : './favicon.svg',
     },
   ],
 })
