@@ -9,6 +9,14 @@
     - limpid_azure_water
   products: [sandstone_polishers]
 
+- id: sapphire_1
+  profession: gemcrafting
+  ingredients:
+    - id: raw_ore_of_sapphire
+      qty: 2
+    - limpid_azure_water
+  products: [sapphire]
+
 # ##################################################################################################
 # Artisanry
 
@@ -18,6 +26,15 @@
     - id: pine_timber
       qty: 3
   products: [pine_lumber]
+
+- id: charcoal_10
+  profession: artisanry
+  ingredients:
+    - id: pine_timber
+      qty: 28
+  products:
+    - id: charcoal
+      qty: 10
 
 # ##################################################################################################
 # Weaving
@@ -61,6 +78,23 @@
     - beeswax
   products: [refined_canvas]
 
+- id: refined_flannel_1
+  profession: weaving
+  ingredients:
+    - id: coarse_animal_fiber
+      qty: 5
+    - id: refined_yarn
+      qty: 3
+  products: [refined_flannel]
+
+- id: smooth_soft_leather_1
+  profession: weaving
+  ingredients:
+    - durable_animal_hides
+    - alumn
+    - refined_fish_oil
+  products: [smooth_soft_leather]
+
 # ##################################################################################################
 # Culinary
 
@@ -95,6 +129,13 @@
     - id: beehive
       qty: 3
   products: [honey]
+
+- id: butter_1
+  profession: culinary
+  ingredients:
+    - id: fresh_milk
+      qty: 3
+  products: [butter]
 
 # ##################################################################################################
 # Alchemy
@@ -153,6 +194,23 @@
     - id: hay
       qty: 3
   products: [fired_brick]
+
+- id: adhesive_1
+  profession: alchemy
+  ingredients:
+    - coarse_grained_animal_hides
+    - id: horn
+      qty: 3
+  products: [adhesive]
+
+- id: evergreen_agent_t_2
+  profession: alchemy
+  ingredients:
+    - tender_plant_stems
+    - id: rock_salt
+      qty: 2
+    - boiled_water
+  products: [evergreen_agent_t_2]
 
 # ##################################################################################################
 # Smelting

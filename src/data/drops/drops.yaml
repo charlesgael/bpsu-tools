@@ -9,6 +9,14 @@
     - base_soil
     - natural_pigment_red
     - natural_pigment_legendary
+  focused:
+    - merald_apple
+    - meadow_mushroom
+    - engram_dust_crystals
+    - buds
+    - base_soil
+    - natural_pigment_red
+    - natural_pigment_legendary
 - materialId: glowshroom
   source: gathering.botany
   regular:
