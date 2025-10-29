@@ -21,6 +21,7 @@ declare module 'vue' {
     'MaterialSymbols:arrowDropUp': typeof import('~icons/material-symbols/arrow-drop-up')['default']
     'MaterialSymbols:arrowForward': typeof import('~icons/material-symbols/arrow-forward')['default']
     'MaterialSymbols:close': typeof import('~icons/material-symbols/close')['default']
+    'MaterialSymbols:starRounded': typeof import('~icons/material-symbols/star-rounded')['default']
     'MaterialSymbols:viewInAr': typeof import('~icons/material-symbols/view-in-ar')['default']
     'MaterialSymbols:viewInArOff': typeof import('~icons/material-symbols/view-in-ar-off')['default']
     Menu: typeof import('./components/Menu.vue')['default']

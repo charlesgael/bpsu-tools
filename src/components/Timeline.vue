@@ -23,6 +23,7 @@ const weeks = computed(() => {
       time: i,
       tasks,
       percent: tasks ? Math.round(Object.entries<boolean>(tasks).filter(([,done]) => done).length / Object.keys(tasks).length * 10) : 0,
+      starred: tasks ? Object.entries<boolean>(tasks).every(([,done]) => done) : false,
       days: [0, 1, 2, 3, 4, 5, 6]
         .map(it => dayjs(i).add(it, 'days').valueOf())
         .map(it => ({ time: it, dailies: dailies[it] }))
@@ -31,6 +32,7 @@ const weeks = computed(() => {
           done: it?.done,
           undone: it?.undone,
           percent: it ? Math.round(Object.entries<boolean>(it).filter(([,done]) => done).length / Object.keys(it).length * 10) : undefined,
+          starred: it ? Object.entries<boolean>(it).every(([,done]) => done) : false,
         })),
     })
   }
@@ -45,11 +47,13 @@ const weeks = computed(() => {
         <div class="bilan">
           <div class="slot bg-gray"></div>
           <div v-if="week" class="slot" :class="`cal-progress-${week.percent}`"></div>
+          <material-symbols:star-rounded v-if="week?.starred" class="slot color-white rotate-0!" />
         </div>
         <div v-for="day in week.days" :key="day.time" class="day">
           <span style="display:none">{{ day.time }}{{ JSON.stringify(day) }}</span>
           <div class="slot bg-gray"></div>
           <div v-if="day" class="slot" :class="`cal-progress-${day.percent}`"></div>
+          <material-symbols:star-rounded v-if="day?.starred" class="slot color-white" />
         </div>
       </div>
     </div>
