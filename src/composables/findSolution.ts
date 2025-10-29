@@ -161,7 +161,7 @@ export function findSolution(wishlist: Wish[]) {
               times: it.satisfied.times,
               provides: it.satisfied.recipe.products
                 .map(it => it.id)
-                .map(material => ({ material, qty: consolidated[material].qty ?? 0 }))
+                .map(material => ({ material, qty: consolidated[material]?.qty ?? 0 }))
                 .filter(({ qty }) => qty !== 0),
             }
         }

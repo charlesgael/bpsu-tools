@@ -412,4 +412,178 @@ item:
   rich_ore_of_emerald: Rich Ore of Emerald
   emerald_cluster: Emerald Cluster
   raw_ore_of_topaz_2: Raw Ore of Topaz
+  recovery_potion: Recovery Potion
+  canned_fish_lv_1: Canned Fish Lv.1
+  canned_fish_lv_2: Canned Fish Lv.2
+  grilled_fish_lv_1: Grilled Fish Lv.1
+  grilled_fish_lv_2: Grilled Fish Lv.2
+  jarred_meat_lv_1: Jarred Meat Lv.1
+  jarred_meat_lv_2: Jarred Meat Lv.2
+  blossom_dumpling_lv_1: Blossom Dumpling Lv.1
+  blossom_dumpling_lv_2: Blossom Dumpling Lv.2
+  honeyshroom_soup_lv_1: Honeyshroom Soup Lv.1
+  honeyshroom_soup_lv_2: Honeyshroom Soup Lv.2
+  shroom_jelly_lv_1: Shroom Jelly Lv.1
+  shroom_jelly_lv_2: Shroom Jelly Lv.2
+  yoyo_fruit_tea_lv_1: Yoyo Fruit Tea Lv.1
+  yoyo_fruit_tea_lv_2: Yoyo Fruit Tea Lv.2
+  sweet_dew_berry_lv_1: Sweet Dew Berry - Lv.1
+  sweet_dew_berry_level_2: Sweet Dew Berry - Level 2
+  sweet_dew_berry_sample_pack: Sweet Dew Berry - Sample Pack
+  lavafish_stew_lv_1: Lavafish Stew Lv.1
+  lavafish_stew_lv_2: Lavafish Stew Lv.2
+  glazefin_chop_lv_1: Glazefin Chop Lv.1
+  glazefin_chop_lv_2: Glazefin Chop Lv.2
+  astelpot_duo_lv_1: Astelpot Duo Lv.1
+  astelpot_duo_lv_2: Astelpot Duo Lv.2
+  astelshroom_pot_lv_1: Astelshroom Pot Lv.1
+  astelshroom_pot_lv_2: Astelshroom Pot Lv.2
+  veilfruit_stew_lv_1: Veilfruit Stew Lv.1
+  veilfruit_stew_lv_2: Veilfruit Stew Lv.2
+  aromafish_can_lv_1: Aromafish Can Lv.1
+  aromafish_can_lv_2: Aromafish Can Lv.2
+  stuffshroom_puff_lv_1: Stuffshroom Puff Lv.1
+  stuffshroom_puff_lv_2: Stuffshroom Puff Lv.2
+  buttery_chunks_lv_1: Buttery Chunks Lv.1
+  buttery_chunks_lv_2: Buttery Chunks Lv.2
+  charfruit_roast_lv_1: Charfruit Roast Lv.1
+  charfruit_roast_lv_2: Charfruit Roast Lv.2
+  plainmeat_soup_lv_1: Plainmeat Soup Lv.1
+  plainmeat_soup_lv_2: Plainmeat Soup Lv.2
+  simple_asterleeds_pot_lv_1: Simple Asterleeds Pot Lv.1
+  simple_asterleeds_pot_lv_2: Simple Asterleeds Pot Lv.2
+  nine_flavor_meat_lv_1: Nine-Flavor Meat Lv.1
+  nine_flavor_meat_lv_2: Nine-Flavor Meat Lv.2
+  mushroom_sauce_lv_1: Mushroom Sauce Lv.1
+  mushroom_sauce_lv_2: Mushroom Sauce Lv.2
+  milky_umm_lv_1: Milky Umm - Lv.1
+  milky_umm_lv_2: Milky Umm - Lv.2
+  meatfish_skewer_lv_1: Meatfish Skewer Lv.1
+  meatfish_skewer_lv_2: Meatfish Skewer Lv.2
+  meatfish_skewer_lv_3: Meatfish Skewer Lv.3
+  hearty_stewmix_lv_1: Hearty Stewmix Lv.1
+  hearty_stewmix_lv_2: Hearty Stewmix Lv.2
+  hearty_stewmix_lv_3: Hearty Stewmix Lv.3
+  painfly_lv_1: Painfly Lv.1
+  painfly_lv_2: Painfly Lv.2
+  painfly_lv_3: Painfly Lv.3
+  shroomfish_stew_lv_1: Shroomfish Stew Lv.1
+  shroomfish_stew_lv_2: Shroomfish Stew Lv.2
+  shroomfish_stew_lv_3: Shroomfish Stew Lv.3
+  astelpot_feast_lv_1: Astelpot Feast Lv.1
+  astelpot_feast_lv_2: Astelpot Feast Lv.2
+  astelpot_feast_lv_3: Astelpot Feast Lv.3
+  fruitocean_gelato_lv_1: Fruitocean Gelato Lv.1
+  fruitocean_gelato_lv_2: Fruitocean Gelato Lv.2
+  fruitocean_gelato_lv_3: Fruitocean Gelato Lv.3
+  seabreeze_special_lv_1: Seabreeze Special Lv.1
+  seabreeze_special_lv_2: Seabreeze Special Lv.2
+  seabreeze_special_lv_3: Seabreeze Special Lv.3
+  buttermelt_roast_lv_1: Buttermelt Roast Lv.1
+  buttermelt_roast_lv_2: Buttermelt Roast Lv.2
+  buttermelt_roast_lv_3: Buttermelt Roast Lv.3
+  glazemeat_sauce_lv_1: Glazemeat Sauce Lv.1
+  glazemeat_sauce_lv_2: Glazemeat Sauce Lv.2
+  glazemeat_sauce_lv_3: Glazemeat Sauce Lv.3
+  kanamia_morsel_lv_1: Kanamia Morsel Lv.1
+  kanamia_morsel_lv_2: Kanamia Morsel Lv.2
+  kanamia_morsel_lv_3: Kanamia Morsel Lv.3
+  buttery_flyfish_lv_1: Buttery Flyfish Lv.1
+  buttery_flyfish_lv_2: Buttery Flyfish Lv.2
+  buttery_flyfish_lv_3: Buttery Flyfish Lv.3
+  bearcut_patty_lv_1: Bearcut Patty Lv.1
+  bearcut_patty_lv_2: Bearcut Patty Lv.2
+  bearcut_patty_lv_3: Bearcut Patty Lv.3
+  spiceshroom_soup_lv_1: Spiceshroom Soup Lv.1
+  spiceshroom_soup_lv_2: Spiceshroom Soup Lv.2
+  spiceshroom_soup_lv_3: Spiceshroom Soup Lv.3
+  wanderfruit_juice_lv_1: Wanderfruit Juice Lv.1
+  wanderfruit_juice_lv_2: Wanderfruit Juice Lv.2
+  wanderfruit_juice_lv_3: Wanderfruit Juice Lv.3
+  healing_aromatic_lv_1: Healing Aromatic Lv.1
+  healing_aromatic_lv_2: Healing Aromatic Lv.2
+  healing_aromatic_lv_3: Healing Aromatic Lv.3
+  fire_serum_lv_1: Fire Serum Lv.1
+  fire_serum_lv_2: Fire Serum Lv.2
+  fire_serum_lv_3: Fire Serum Lv.3
+  fire_drop_lv_1: Fire Drop Lv.1
+  fire_drop_lv_2: Fire Drop Lv.2
+  fire_drop_lv_3: Fire Drop Lv.3
+  ice_serum_lv_1: Ice Serum Lv.1
+  ice_serum_lv_2: Ice Serum Lv.2
+  ice_serum_lv_3: Ice Serum Lv.3
+  ice_drop_lv_1: Ice Drop Lv.1
+  ice_drop_lv_2: Ice Drop Lv.2
+  ice_drop_lv_3: Ice Drop Lv.3
+  forest_serum_lv_1: Forest Serum Lv.1
+  forest_serum_lv_2: Forest Serum Lv.2
+  forest_serum_lv_3: Forest Serum Lv.3
+  forest_drop_lv_1: Forest Drop Lv.1
+  forest_drop_lv_2: Forest Drop Lv.2
+  forest_drop_lv_3: Forest Drop Lv.3
+  earth_serum_lv_1: Earth Serum Lv.1
+  earth_serum_lv_2: Earth Serum Lv.2
+  earth_serum_lv_3: Earth Serum Lv.3
+  earth_drop_lv_1: Earth Drop Lv.1
+  earth_drop_lv_2: Earth Drop Lv.2
+  earth_drop_lv_3: Earth Drop Lv.3
+  wind_serum_lv_1: Wind Serum Lv.1
+  wind_serum_lv_2: Wind Serum Lv.2
+  wind_serum_lv_3: Wind Serum Lv.3
+  wind_drop_lv_1: Wind Drop Lv.1
+  wind_drop_lv_2: Wind Drop Lv.2
+  wind_drop_lv_3: Wind Drop Lv.3
+  lightning_serum_lv_1: Lightning Serum Lv.1
+  lightning_serum_lv_2: Lightning Serum Lv.2
+  lightning_serum_lv_3: Lightning Serum Lv.3
+  lightning_drop_lv_1: Lightning Drop Lv.1
+  lightning_drop_lv_2: Lightning Drop Lv.2
+  lightning_drop_lv_3: Lightning Drop Lv.3
+  light_serum_lv_1: Light Serum Lv.1
+  light_serum_lv_2: Light Serum Lv.2
+  light_serum_lv_3: Light Serum Lv.3
+  light_drop_lv_1: Light Drop Lv.1
+  light_drop_lv_2: Light Drop Lv.2
+  light_drop_lv_3: Light Drop Lv.3
+  dark_serum_lv_1: Dark Serum Lv.1
+  dark_serum_lv_2: Dark Serum Lv.2
+  dark_serum_lv_3: Dark Serum Lv.3
+  dark_drop_lv_1: Dark Drop Lv.1
+  dark_drop_lv_2: Dark Drop Lv.2
+  dark_drop_lv_3: Dark Drop Lv.3
+  olvera_s_blessing: Olvera's Blessing
+  tina_s_blessing: Tina's Blessing
   cheer_up_treat: Cheer-Up Treat
+  focus_potion: Focus Potion
+  toy_white_fireworks: Toy - White Fireworks
+  toy_blue_fireworks: Toy - Blue Fireworks
+  toy_green_fireworks: Toy - Green Fireworks
+  toy_pink_fireworks: Toy - Pink Fireworks
+  toy_epic_fireworks: Toy - Epic Fireworks
+  toy_legendary_fireworks: Toy - Legendary Fireworks
+  toy_yellow_fireworks: Toy - Yellow Fireworks
+  toy_rainbow_fireworks: Toy - Rainbow Fireworks
+  toy_ee_chan_firework: Toy - Ee-chan Firework
+  toy_bubble_stick: Toy - Bubble Stick
+  toy_water_spell: Toy - Water Spell
+  toy_fairy_stick: Toy - Fairy Stick
+  toy_phantom_toy: Toy - Phantom Toy
+  toy_shadow_particles: Toy - Shadow Particles
+  toy_hover_bubble: Toy - Hover Bubble
+  toy_adorable_sculpture: Toy - Adorable Sculpture
+  toy_imposing_sculpture: Toy - Imposing Sculpture
+  toy_scenery_canvas: Toy - Scenery Canvas
+  toy_yellow_light_stick: Toy - Yellow Light Stick
+  toy_cyan_light_stick: Toy - Cyan Light Stick
+  toy_green_light_stick: Toy - Green Light Stick
+  toy_epic_light_stick: Toy - Epic Light Stick
+  toy_golden_statue: Toy - Golden Statue
+  toy_silver_statue: Toy - Silver Statue
+  toy_yellow_sparkler: Toy - Yellow Sparkler
+  toy_frost_beam: Toy - Frost Beam
+  toy_cute_reading_pose: Toy - Cute Reading Pose
+  toy_bouncing_device: Toy - Bouncing Device
+  toy_land_explorer: Toy - Land Explorer
+  toy_small_light_bridge: Toy - Small Light Bridge
+  toy_extended_light_bridge: Toy - Extended Light Bridge
+  healing_tonic: Healing Tonic

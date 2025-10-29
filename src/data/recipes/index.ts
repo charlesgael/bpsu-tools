@@ -10,7 +10,7 @@ export interface Recipe {
   products: consumable[]
   ingredients: consumable[]
   profession?: string
-  focus?: number
+  focus: number
 }
 
 function parseConsumable(rawIngredient: Partial<consumable> | string) {

@@ -136,6 +136,28 @@
     - id: fresh_milk
       qty: 3
   products: [butter]
+- id: jarred_meat_lv_1_1_jarred_meat_lv_2_1
+  profession: culinary
+  ingredients:
+    - id: fresh_meat
+      qty: 2
+    - id: butter
+      qty: 2
+  products:
+    - id: jarred_meat_lv_1
+      qty: 1
+    - id: jarred_meat_lv_2
+      qty: 1
+  focus: 25
+- id: fresh_meat_1
+  profession: culinary
+  ingredients:
+    - id: raw_meat
+      qty: 1
+  products:
+    - id: fresh_meat
+      qty: 8
+  focus: 10
 
 # ##################################################################################################
 # Alchemy
