@@ -13,8 +13,8 @@ const {
 } = defineProps<Props>()
 
 const weeks = computed(() => {
-  const dates = [...Object.keys(dailies), ...Object.keys(weeklies)].map(Number.parseInt).toSorted()
-  const start = dayjs(dates[0]).startOf('week').valueOf()
+  const dates = [...Object.keys(dailies), ...Object.keys(weeklies)].map(it => +it).toSorted()
+  const start = Math.max(dayjs(dates[0]).startOf('week').valueOf(), dayjs().subtract(100, 'week').startOf('week').valueOf())
   const end = dayjs().startOf('week').valueOf()
   const weeks = []
   for (let i = start.valueOf(); i <= end; i = dayjs(i).add(1, 'week').valueOf()) {
@@ -47,6 +47,7 @@ const weeks = computed(() => {
           <div v-if="week" class="slot" :class="`cal-progress-${week.percent}`"></div>
         </div>
         <div v-for="day in week.days" :key="day.time" class="day">
+          <span style="display:none">{{ day.time }}{{ JSON.stringify(day) }}</span>
           <div class="slot bg-gray"></div>
           <div v-if="day" class="slot" :class="`cal-progress-${day.percent}`"></div>
         </div>

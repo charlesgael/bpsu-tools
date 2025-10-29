@@ -2,46 +2,6 @@
 const store = useDailiesStore()
 
 const { t } = useI18n()
-
-// const weeklies = computed<Record<string, boolean>>(() => {
-//   const { done, undone } = store.weeklies
-
-//   return Object.fromEntries([
-//     ...done.map<[string, boolean]>(it => [it, true]),
-//     ...undone.map<[string, boolean]>(it => [it, false]),
-//   ].toSorted(([a]: any, [b]: any) => a.localeCompare(b)))
-// })
-
-// const dailies = computed<Record<string, boolean>>(() => {
-//   const { done, undone } = store.dailies
-
-//   return Object.fromEntries([
-//     ...done.map<[string, boolean]>(it => [it, true]),
-//     ...undone.map<[string, boolean]>(it => [it, false]),
-//   ].toSorted(([a], [b]) => a.localeCompare(b)))
-// })
-
-// function changeDaily(id: string) {
-//   if (store.dailies.done.includes(id)) {
-//     store.dailies.done.splice(store.dailies.done.indexOf(id), 1)
-//     store.dailies.undone.push(id)
-//   }
-//   else {
-//     store.dailies.undone.splice(store.dailies.undone.indexOf(id), 1)
-//     store.dailies.done.push(id)
-//   }
-// }
-
-// function changeWeekly(id: string) {
-//   if (store.weeklies.done.includes(id)) {
-//     store.weeklies.done.splice(store.weeklies.done.indexOf(id), 1)
-//     store.weeklies.undone.push(id)
-//   }
-//   else {
-//     store.weeklies.undone.splice(store.weeklies.undone.indexOf(id), 1)
-//     store.weeklies.done.push(id)
-//   }
-// }
 </script>
 
 <template>
