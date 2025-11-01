@@ -18,6 +18,8 @@ quest:
   reputation_store: Reputation Store
   season_pass_store: Season Pass Store
   stimen_vaults: Stimen Vaults
+  guild_dance: Guild Dance
+  guild_hunt: Guild Hunt
 drop:
   regular:
     gathering:
